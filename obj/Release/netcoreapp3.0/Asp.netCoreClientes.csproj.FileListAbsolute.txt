@@ -66,3 +66,4 @@ c:\Users\Ricardo\Documents\Platzi\BackeEnd\Asp.netCoreClientes\obj\Release\netco
 C:\Users\Ricardo\Documents\Platzi\BackeEnd\Asp.netCoreClientes\obj\Release\netcoreapp3.0\Asp.netCoreClientes.csproj.CopyComplete
 c:\Users\Ricardo\Documents\Platzi\BackeEnd\Asp.netCoreClientes\obj\Release\netcoreapp3.0\Asp.netCoreClientes.dll
 c:\Users\Ricardo\Documents\Platzi\BackeEnd\Asp.netCoreClientes\obj\Release\netcoreapp3.0\Asp.netCoreClientes.pdb
+c:\Users\Ricardo\Documents\Platzi\BackeEnd\Asp.netCoreClientes\bin\Release\netcoreapp3.0\appsettings.Development.json
