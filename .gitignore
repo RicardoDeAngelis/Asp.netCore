@@ -1,0 +1,8 @@
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/estensions.json
+obj
+bin
+appsettings.Development.json
