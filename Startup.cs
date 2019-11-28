@@ -65,7 +65,7 @@ namespace Asp.netCoreClientes
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=cliente}/{action=Index}/{id?}");
+                    pattern: "{controller=cliente}/{action=MultiCliente}/{id?}");
             });
         }
     }
