@@ -42,7 +42,7 @@ namespace Asp.netCoreClientes
             // );
 
             // Conexion  a Db in Azure
-            string connString=ConfigurationExtensions.GetConnectionString(this.Configuration,"DefaultConnectionsString");
+            string connString=ConfigurationExtensions.GetConnectionString(this.Configuration,"DefaultConnectionStrings");
             services.AddDbContext<ClienteContext>(
             // utilizamos un delegado para configurar
             // el servicio de la DB in Azure pasandole por parametro la cadena de conexion
