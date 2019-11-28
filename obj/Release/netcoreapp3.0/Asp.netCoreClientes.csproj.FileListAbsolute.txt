@@ -1,5 +1,4 @@
 c:\Users\Ricardo\Documents\Platzi\BackeEnd\Asp.netCoreClientes\bin\Release\netcoreapp3.0\appsettings.json
-c:\Users\Ricardo\Documents\Platzi\BackeEnd\Asp.netCoreClientes\bin\Release\netcoreapp3.0\appsettings.Development.json
 c:\Users\Ricardo\Documents\Platzi\BackeEnd\Asp.netCoreClientes\bin\Release\netcoreapp3.0\Properties\launchSettings.json
 c:\Users\Ricardo\Documents\Platzi\BackeEnd\Asp.netCoreClientes\bin\Release\netcoreapp3.0\Asp.netCoreClientes.exe
 C:\Users\Ricardo\Documents\Platzi\BackeEnd\Asp.netCoreClientes\bin\Release\netcoreapp3.0\Asp.netCoreClientes.deps.json
