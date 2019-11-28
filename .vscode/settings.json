@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "",
+    "appService.defaultWebAppToDeploy": "/subscriptions/b53c3920-464d-4893-a1de-380948257068/resourceGroups/Clientes/providers/Microsoft.Web/sites/WepCLientes"
+}
