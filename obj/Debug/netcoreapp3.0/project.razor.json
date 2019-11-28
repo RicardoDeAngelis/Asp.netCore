@@ -14384,6 +14384,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Ricardo\\Documents\\Platzi\\BackeEnd\\Asp.netCoreClientes\\Views\\Cliente\\Details.cshtml",
+      "TargetPath": "Views\\Cliente\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Ricardo\\Documents\\Platzi\\BackeEnd\\Asp.netCoreClientes\\Views\\Cliente\\Create.cshtml",
       "TargetPath": "Views\\Cliente\\Create.cshtml",
       "FileKind": "mvc"
