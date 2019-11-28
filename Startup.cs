@@ -35,9 +35,19 @@ namespace Asp.netCoreClientes
 
             services.AddControllersWithViews();
 
+            // Conexion  a DbInMemory
+            // services.AddDbContext<ClienteContext>(
+            // // utilizamos un delegado para confgurar el servicio de la datanabe in memory
+            // options => options.UseInMemoryDatabase(databaseName:"testDB")
+            // );
+
+            // Conexion  a Db in Azure
+            string connString=ConfigurationExtensions.GetConnectionString(this.Configuration,"DefaultConnectionsString");
             services.AddDbContext<ClienteContext>(
-                // utilizamos un delegado para confgurar el servicio de la datanase in memory
-             options => options.UseInMemoryDatabase(databaseName:"testDB"));
+            // utilizamos un delegado para configurar
+            // el servicio de la DB in Azure pasandole por parametro la cadena de conexion
+            options => options.UseSqlServer(connString)
+            );
 
         }
 
@@ -65,7 +75,7 @@ namespace Asp.netCoreClientes
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=cliente}/{action=Index}/{id?}");
+                    pattern: "{controller=cliente}/{action=MultiCliente}/{id?}");
             });
         }
     }
