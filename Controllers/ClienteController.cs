@@ -57,6 +57,7 @@ namespace Asp.netCoreClientes.Controllers
         {
             if (ModelState.IsValid)
             {
+                
                 _context.Add(clienteModel);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
