@@ -1,0 +1,21 @@
+﻿<!-- codigo c# (razor) hacemos este modelo fuertemente tipado
+para poder encontrar errores mas facilmente especificamos que el 
+modelo es de tipo cliente-->
+@model ClienteModel
+
+@{
+    ViewData["Title"] = "Informacion de Clientes";
+    
+}
+<div class="container">
+        <main role="main" class="pb-3">
+            <div class="text-center">
+
+<h1>@ViewData["Title"]</h1>
+<h2>@ViewBag.MensajeExtra</h2>
+<!-- <h1><strong>vista parcial</strong></h1> -->
+<!-- taghelper -->
+<partial name="ClienteSimple"/>
+            </div>
+        </main>
+</div>

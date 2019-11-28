@@ -1,0 +1,43 @@
+﻿@model ClienteModel
+
+@{
+    ViewData["Title"] = "Edición de Cliente";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div asp-validation-summary="All"></div>
+    
+    <input type="hidden" asp-for="Id" />
+<form method="POST">
+
+    <div class="form-group">
+        <label asp-for= "Nombre"></label>
+        <input asp-for="Nombre" id="Nombre" class="form-control" type="text"/>    
+    </div>
+
+    <div class="form-group">
+        <label asp-for= "Apellido"></label>
+        <input asp-for="Apellido"  id="Apellido" class="form-control" type="text"/>    
+    </div>
+
+    <div class="form-group">
+        <label asp-for= "Dni"></label>
+        <input asp-for="Dni"  id="Dni" class="form-control" type="text"/>    
+    </div>
+
+    <div class="form-group">
+        <label asp-for= "Localidad"></label>
+        <input asp-for="Localidad"  id="Localidad" class="form-control" type="text"/>    
+    </div>
+
+    <div class="form-group">
+        <label asp-for= "Telefono"></label>
+        <input asp-for="Telefono"  id="Telefono" class="form-control" type="text"/>    
+    </div>
+
+    <input class="btn btn-primary" type="submit" value="Guardar"/>
+
+
+
+</form>

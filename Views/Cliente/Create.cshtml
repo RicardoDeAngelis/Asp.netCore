@@ -1,0 +1,55 @@
+﻿<!-- codigo c# (razor) hacemos este modelo fuertemente tipado
+para poder encontrar errores mas facilmente especificamos que el 
+modelo es de tipo cliente-->
+@model ClienteModel
+
+@{
+    ViewData["Title"] = "Alta de Clientes";
+    
+}
+<div >
+<h1> @ViewData["Title"] </h1>
+<!-- mpstrar validaciones  con aspnetcore-->
+<div asp-validation-summary="All"> </div>
+
+<form method="POST" class="text-center">
+
+    <div class="form-group">
+        <label asp-for= "Nombre"></label>
+        <input asp-for="Nombre" id="Nombre" class="form-control" type="text"/>    
+    </div>
+
+    <div class="form-group">
+        <label asp-for= "Apellido"></label>
+        <input asp-for="Apellido"  id="Apellido" class="form-control" type="text"/>    
+    </div>
+
+    <div class="form-group">
+        <label asp-for= "Dni"></label>
+        <input asp-for="Dni"  id="Dni" class="form-control" type="text"/>    
+    </div>
+
+    <div class="form-group">
+        <label asp-for= "Localidad"></label>
+        <input asp-for="Localidad"  id="Localidad" class="form-control" type="text"/>    
+    </div>
+
+    <div class="form-group">
+        <label asp-for= "Telefono"></label>
+        <input asp-for="Telefono"  id="Telefono" class="form-control" type="text"/>    
+    </div>
+
+    <input class="btn btn-primary" type="submit" value="Guardar"/>
+
+
+</form>
+<div>
+    <div>
+        <a asp-action="Index" >
+         <input class="btn btn-primary" type="submit" value="volver a la lista"/>
+         </a>
+   </div>
+   
+</div>
+
+</div>

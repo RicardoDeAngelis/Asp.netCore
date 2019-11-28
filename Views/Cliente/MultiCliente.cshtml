@@ -1,0 +1,59 @@
+﻿<!-- codigo c# (razor) hacemos este modelo fuertemente tipado
+para poder encontrar errores mas facilmente especificamos que el 
+modelo es de tipo cliente-->
+@model IEnumerable<ClienteModel>
+
+@{
+    ViewData["Title"] = "Informacion de Clientes";
+    
+}
+ <a asp-action="Create" > <input class="btn btn-success" type="submit" value="Crear cliente"/>  </a>
+<div class="text-center">
+<table class="table table-dark table-hover ">
+<thead>
+       
+    
+        <tr>
+            <th scope="col">ClienteId</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Dni</th>
+            <th scope="col">Localidad</th>
+            <th scope="col">Telefono</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        
+@foreach ( var cliente in Model)
+{
+
+            <tr>
+                <td> @cliente.Id </td>
+                <td> @cliente.Nombre </td>
+                <td> @cliente.Apellido </td>
+                <td> @cliente.Dni</td>
+                <td> @cliente.Localidad</td>
+                <td> @cliente.Telefono </td>
+                <td>
+                    <div>
+                        <a asp-action="Edit" asp-route-id="@cliente.Id">
+                       <input class="btn btn-primary" type="submit" value="Editar"/>
+                   </a> 
+                   </div>
+                    
+                </td>
+                <div>
+                    <td>
+                       <a asp-action="Delete" asp-route-id="@cliente.Id">
+                       <input class="btn btn-danger" type="submit" value="Eliminar"/>
+                   </a> 
+                </td>
+                 </div>
+                
+             </tr>
+ }
+    </tbody>
+</table>
+
+</div>
