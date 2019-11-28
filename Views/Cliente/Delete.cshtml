@@ -1,0 +1,33 @@
+﻿@model ClienteModel
+
+@{
+    ViewData["Title"] = "Baja de Cliente";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+<h2>Baja</h2>
+
+<h3>Esta seguro de eliminar este cliente?</h3>
+<div>
+    <h4>Cliente</h4>
+     <input type="hidden" asp-for="Id" />
+    <hr />
+    <dl class="dl-horizontal">
+    
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <!-- <input type="hidden" asp-for="Id" /> -->
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <button><a asp-action="Index">Volver a la Lista</a> </button>
+        
+    </form>
+</div>
