@@ -33,6 +33,7 @@ namespace Asp.netCoreClientes.Controllers
           return View(await clientes.ToListAsync());
 
         }
+        
 
         // GET: Cliente/Details/5
         public async Task<IActionResult> Details(string id)

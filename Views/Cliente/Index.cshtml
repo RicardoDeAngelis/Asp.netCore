@@ -6,22 +6,19 @@
 
 <h1 class="text-center">Lista de clientes</h1>
 
-    <div class="inline">
+   
         <a asp-action="Create" >
          <input class="btn btn-primary" type="submit" value="Crear nuevo"/>
          </a>
         
    
 
-    <form  asp-action="Index" method="get">
+    <form asp-controller="Cliente"  asp-action="Index" method="get">
 
         <input type="submit" value="Buscar" class="btn btn-primary" />
         <input type="text" name="Search" placeholder="Ingresa el dni" class="form-group">
-         
-       
-    
     </form>
-    </div>
+    
  
 
 <table class="table">
@@ -82,3 +79,4 @@
 }
     </tbody>
 </table>
+<button ><a asp-action="Index">Volver a la Lista</a> </button>
