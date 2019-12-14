@@ -56,5 +56,8 @@
     <a asp-action="Edit" asp-route-id="@Model.Id" >
     <input class="btn btn-primary" type="submit" value="Editar"/>
     </a>
+     <a asp-action="Delete" asp-route-id="@Model.Id" >
+        <input class="btn btn-danger" type="submit" value="Eliminar"/>
+    </a>
     <button ><a asp-action="Index">Volver a la Lista</a> </button>
 </div>

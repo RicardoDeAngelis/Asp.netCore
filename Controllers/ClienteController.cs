@@ -19,9 +19,19 @@ namespace Asp.netCoreClientes.Controllers
         }
 
         // GET: Cliente
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string search)
         {
-            return View(await _context.Clientes.ToListAsync());
+
+                var clientes = from m in _context.Clientes
+                 select m;
+
+         if (!String.IsNullOrEmpty(search))
+        {
+        clientes = clientes.Where(s => s.Dni.Contains(search));
+         }
+
+          return View(await clientes.ToListAsync());
+
         }
 
         // GET: Cliente/Details/5
@@ -150,5 +160,27 @@ namespace Asp.netCoreClientes.Controllers
         {
             return _context.Clientes.Any(e => e.Id == id);
         }
-    }
+
+// public async Task<IActionResult> Search(string search)
+// {
+//     var clientes = from m in _context.Clientes
+//                  select m;
+
+//     if (!String.IsNullOrEmpty(search))
+//     {
+//         clientes = clientes.Where(s => s.Dni.Contains(search));
+//     }
+
+//     return View(await clientes.ToListAsync());
+// }
+
+[HttpPost]
+public string Index(string search, bool notUsed)
+{
+    return "From [HttpPost]Search: filter on " + search;
+}
+    
+}
+
+
 }

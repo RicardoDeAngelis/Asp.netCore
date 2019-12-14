@@ -6,14 +6,27 @@
 
 <h1 class="text-center">Lista de clientes</h1>
 
-    <div>
+    <div class="inline">
         <a asp-action="Create" >
          <input class="btn btn-primary" type="submit" value="Crear nuevo"/>
          </a>
         
-   </div>
+   
+
+    <form  asp-action="Index" method="get">
+
+        <input type="submit" value="Buscar" class="btn btn-primary" />
+        <input type="text" name="Search" placeholder="Ingresa el dni" class="form-group">
+         
+       
+    
+    </form>
+    </div>
+ 
+
 <table class="table">
     <thead>
+
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Nombre)
